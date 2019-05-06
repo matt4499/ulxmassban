@@ -39,7 +39,7 @@ namespace MassBanTool
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            timerseconds.Text = "Timer Expired.";
+            timerseconds.Text = "starting bans...";
             SendKeys.Send("say \"/advert <hsv> Youre about to die at the hands of the mighty Thanos </hsv>\" ");
             SendKeys.Send("{ENTER}");
             Thread.Sleep(500);
@@ -47,7 +47,14 @@ namespace MassBanTool
             for (var i = 0; i < lines.Length; i += 1)
             {
                 var line = lines[i];
-                SendKeys.Send("ulx banid " + line + " 4499 \"Thanos snapped his fingers.\"");
+                if (permchecked.Checked == true)
+                {
+                 SendKeys.Send("ulx banid " + line + " 0 \"Thanos snapped his fingers. (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
+                } else if(tempchecked.Checked == true){
+                    var timetobanfor = timetext.Text;
+                    SendKeys.Send("ulx banid " + line + " " + timetobanfor + " \"Thanos snapped his fingers. (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
+                }
+         
                 Thread.Sleep(500);
                 SendKeys.Send("{ENTER}");
                 Thread.Sleep(500);
