@@ -6,6 +6,8 @@ A quick way is to open the awarn menu, click offline players, and click show all
 Take a screenshot of the ids you want to mass ban, then save it
 Put the screenshot thru a image to text converter on the internet.
 It will give you the steam ids in the screenshot.
+
+
 **How it works:**
 
 create a text file anywhere.
