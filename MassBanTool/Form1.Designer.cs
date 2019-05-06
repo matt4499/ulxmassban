@@ -38,6 +38,7 @@
             this.permchecked = new System.Windows.Forms.RadioButton();
             this.tempchecked = new System.Windows.Forms.RadioButton();
             this.timetext = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -120,11 +121,22 @@
             this.timetext.Size = new System.Drawing.Size(100, 20);
             this.timetext.TabIndex = 12;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(130, 100);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(88, 17);
+            this.checkBox1.TabIndex = 13;
+            this.checkBox1.Text = "Unban Mode";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 210);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.timetext);
             this.Controls.Add(this.tempchecked);
             this.Controls.Add(this.permchecked);
@@ -151,6 +163,7 @@
         private System.Windows.Forms.RadioButton permchecked;
         private System.Windows.Forms.RadioButton tempchecked;
         private System.Windows.Forms.TextBox timetext;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

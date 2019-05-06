@@ -39,25 +39,43 @@ namespace MassBanTool
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            timerseconds.Text = "starting bans...";
-            SendKeys.Send("say \"/advert <hsv> Youre about to die at the hands of the mighty Thanos </hsv>\" ");
-            SendKeys.Send("{ENTER}");
-            Thread.Sleep(250);
-            var lines = File.ReadAllLines(path);
-            for (var i = 0; i < lines.Length; i += 1)
+            if(checkBox1.Checked == true)
             {
-                var line = lines[i];
-                if (permchecked.Checked == true)
+                var lines2 = File.ReadAllLines(path);
+                for (var i = 0; i < lines2.Length; i += 1)
                 {
-                 SendKeys.Send("ulx banid " + line + " 0 \"discord.gg/KJ58UwK (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
-                } else if(tempchecked.Checked == true){
-                    var timetobanfor = timetext.Text;
-                    SendKeys.Send("ulx banid " + line + " " + timetobanfor + " \"discord.gg/KJ58UwK (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
+                   timerseconds.Text = "starting unbans...";
+                   var line2 = lines2[i];
+                   SendKeys.Send("ulx unban " + line2);
+                   SendKeys.Send("{ENTER}");
+                   Thread.Sleep(250);
                 }
-         
-                Thread.Sleep(250);
+            }1:123974731 
+
+            if (checkBox1.Checked == false)
+            {
+                timerseconds.Text = "starting bans...";
+                SendKeys.Send("say \"/advert <hsv> Youre about to die at the hands of the mighty Thanos </hsv>\" ");
                 SendKeys.Send("{ENTER}");
                 Thread.Sleep(250);
+                var lines = File.ReadAllLines(path);
+                for (var i = 0; i < lines.Length; i += 1)
+                {
+                    var line = lines[i];
+                    if (permchecked.Checked == true)
+                    {
+                        SendKeys.Send("ulx banid " + line + " 0 \"discord.gg/KJ58UwK (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
+                    }
+                    else if (tempchecked.Checked == true)
+                    {
+                        var timetobanfor = timetext.Text;
+                        SendKeys.Send("ulx banid " + line + " " + timetobanfor + " \"discord.gg/KJ58UwK (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
+                    }
+
+                    Thread.Sleep(250);
+                    SendKeys.Send("{ENTER}");
+                    Thread.Sleep(250);
+                }
             }
         }
     }
