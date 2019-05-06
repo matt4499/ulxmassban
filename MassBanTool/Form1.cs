@@ -50,7 +50,7 @@ namespace MassBanTool
                    SendKeys.Send("{ENTER}");
                    Thread.Sleep(250);
                 }
-            }1:123974731 
+            }
 
             if (checkBox1.Checked == false)
             {
