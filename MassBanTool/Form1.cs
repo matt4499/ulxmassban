@@ -39,29 +39,15 @@ namespace MassBanTool
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            if(checkBox1.Checked == true)
-            {
-                var lines2 = File.ReadAllLines(path);
-                for (var i = 0; i < lines2.Length; i += 1)
+            timerseconds.Text = "starting bans...";
+            SendKeys.Send("say \"/advert <hsv> Youre about to die at the hands of the mighty Thanos </hsv>\" ");
+            SendKeys.Send("{ENTER}");
+            Thread.Sleep(250);
+            var lines = File.ReadAllLines(path);
+            for (var i = 0; i < lines.Length; i += 1)
                 {
-                   timerseconds.Text = "starting unbans...";
-                   var line2 = lines2[i];
-                   SendKeys.Send("ulx unban " + line2);
-                   SendKeys.Send("{ENTER}");
-                   Thread.Sleep(250);
-                }
-            }
-
-            if (checkBox1.Checked == false)
-            {
-                timerseconds.Text = "starting bans...";
-                SendKeys.Send("say \"/advert <hsv> Youre about to die at the hands of the mighty Thanos </hsv>\" ");
-                SendKeys.Send("{ENTER}");
-                Thread.Sleep(250);
-                var lines = File.ReadAllLines(path);
-                for (var i = 0; i < lines.Length; i += 1)
-                {
-                    var line = lines[i];
+                    var line1 = lines[i];
+                    var line = line1.Replace(" ", string.Empty);
                     if (permchecked.Checked == true)
                     {
                         SendKeys.Send("ulx banid " + line + " 0 \"discord.gg/KJ58UwK (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
