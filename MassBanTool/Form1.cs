@@ -61,8 +61,7 @@ namespace MassBanTool
                     Thread.Sleep(250);
                     SendKeys.Send("{ENTER}");
                     Thread.Sleep(250);
-                }
-            }
+                }          
         }
     }
 }

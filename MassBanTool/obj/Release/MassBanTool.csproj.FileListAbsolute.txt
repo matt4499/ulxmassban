@@ -1,0 +1,14 @@
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\bin\Release\MassBanTool.exe.config
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\bin\Release\MassBanTool.exe.manifest
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\bin\Release\MassBanTool.application
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\bin\Release\MassBanTool.exe
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\bin\Release\MassBanTool.pdb
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.csprojAssemblyReference.cache
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.Form1.resources
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.Properties.Resources.resources
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.csproj.GenerateResource.cache
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.exe.manifest
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.application
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.exe
+C:\Users\Matt\Desktop\ulxmassban-master\MassBanTool\obj\Release\MassBanTool.pdb
