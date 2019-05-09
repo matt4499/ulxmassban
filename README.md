@@ -18,8 +18,9 @@ you may or may not have to edit a few of them to be in the correct format.
 - Input a reason for the ban
 - click Temp Time if you do not have permissions to ban permanately.
 - when you are ready click START
-*you then have 5 seconds to back into garry's mod*
-click on your console input area and make sure you can type in it, and it will start mass banning everyone.
+- *you then have 5 seconds to back into garry's mod*
+- click on your console input area and make sure you can type in it.
+- let the fun begin
 
 you must have access to ulx banid
 put gmod into windowed borderless to get to console faster.
