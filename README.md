@@ -1,5 +1,6 @@
 # ulxmassban
-#I no longer am working on this project. Feel free to fork and do anything you'd like with it.
+
+***I no longer am working on this project. Feel free to fork and do anything you'd like with it.***
 
 This tool is used to mass ban people on Garry's Mod servers using ULX.
 
