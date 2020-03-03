@@ -50,12 +50,12 @@ namespace MassBanTool
                     var line = line1.Replace(" ", string.Empty);
                     if (permchecked.Checked == true)
                     {
-                        SendKeys.Send("ulx banid " + line + " 0 \"discord.gg/KJ58UwK (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
+                        SendKeys.Send("ulx banid " + line + " 0 \"ban reason goes here lol (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
                     }
                     else if (tempchecked.Checked == true)
                     {
                         var timetobanfor = timetext.Text;
-                        SendKeys.Send("ulx banid " + line + " " + timetobanfor + " \"discord.gg/KJ58UwK (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
+                        SendKeys.Send("ulx banid " + line + " " + timetobanfor + " \"ban reason goes here lol (ulxmassban[https://github.com/Matt4499/ulxmassban])\"");
                     }
 
                     Thread.Sleep(250);
